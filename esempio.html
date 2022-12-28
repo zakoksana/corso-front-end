@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esempi cancellati</title>
+</head>
+<body>
+    <form action="/forms.html" method="get">
+        User <input type="text" required name="user" placeholder="Enter the user name"/> <br>
+        Password <input type="password" name="password" placeholder="Enter the password"/> <br>
+
+        <textarea name="comment" rows="10" cols="20">
+            
+        </textarea>
+        <input type="submit" value="Login"/>
+
+    </form>
+
+<!--2 esemppio -->
+    <select name="type">
+        <option value="type_1">Type 1</option>
+        <option value="type_2" selected>Type 2</option> <!-- apparirà solo tipo 2-->
+        <option value="type_3">Type 3</option>
+    </select>
+    <input type="submit" value="Login"/>
+
+</form>
+
+<!--3 esempio -->
+
+<select name="type">
+    <option></option> <!--apprarirà un campo vuoto-->
+    <option value="type_1">Type 1</option>
+    <option value="type_2">Type 2</option>
+    <option value="type_3">Type 3</option>
+</select>
+<input type="submit" value="Login"/>
+
+</form>
+
+<select name="type" size="3" multiple>
+            
+    <option value="type_1">Type 1</option>
+    <option value="type_2">Type 2</option>
+    <option value="type_3">Type 3</option>
+</select>
+<input type="submit" value="Login"/>
+
+</form>
+
+<!--- 4 esempio-->
+
+<form action="/forms.html" method="get">
+    <label>
+
+        User <input type="text" required="1" name="user" placeholder="Enter the user name"/> <br>   
+    </label>
+
+    <label for="form-password">Password</label>
+    <input id="form-password"
+    type="password" 
+    name="password" 
+    placeholder="Enter the password"/> <br>
+    <br>
+    <label for="">Keep loggin in </label>
+    <input type="checkbox" id="form-checkbox"/>
+
+    <br>
+    <br>
+
+
+        <select name="type" size="3" multiple>
+            
+            <option value="type_1">Type 1</option>
+            <option value="type_2">Type 2</option>
+            <option value="type_3">Type 3</option>
+        </select>
+        <input type="submit" value="Login"/>
+
+        </form>
+
+
+        <!--- fine 4 esempio -->
+</body>
+</html>
