@@ -1,0 +1,22 @@
+.book-page{
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.title{
+    color:blueviolet;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+.text{
+    text-indent: 50px;
+    line-height: 1.5;
+    text-align: justify;
+    font-size: 20px;
+}
+.line-through{
+    text-decoration: line-through;
+}
+.blockquote{
+    font-style: italic;
+    font-weight: bold;
+}
