@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(250, 246, 250);
+}
+
+.photo {
+         width: 280px;
+        height: 300px;
+        background-image: url(../immagini/IMG_5458\ Piccola.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: 0px;
+        margin-bottom: 10px;
+        padding: 30px;
+        margin: 10px;
+        border-width: 690px;
+        border: solid 2px rgb(218, 237, 240);
+        box-shadow: 6px 4px #e7f7f9;
+        border-radius: 5px;
+        
+        
+}
+.underline{
+    color:rgb(218, 237, 240);
+    border: solid 1px;
+}
+.header {
+    color: rgb(38, 3, 126);
+    font-family: 'Poppins', sans-serif;
+    height: 30px;
+
+}
+
+
+table thead tr th{
+    border: 3px solid black;
+    padding: 5px;
+    margin: auto;
+}
+table thead tr td {
+    border: 3px solid black;
+    padding: 5px;
+    margin: auto;
+}
+
+tbody tr td {
+    border: 3px solid black;
+    padding: 5px;
+    margin: auto;
+}
+
+tfoot tr td {
+    border: 3px solid black;
+    padding: 5px;
+    margin: auto;
+}
+
+/* coloro la tabella*/
+.table{
+    
+    border: 2px solid black;
+    border-collapse: collapse;
+    background: rgb(218, 237, 240);
+}
+.color{
+    background: rgb(137, 228, 243);
+}
+/* fine */
+
+.titolo {
+    text-transform: uppercase;
+}
+
+.inlink {
+    color: #00f;
+    text-decoration: underline;
+}
+
+.inlink:visited {
+    color: #005;
+    text-decoration: underline;
+}
+
+.inlink:hover {
+    color: darkcyan;
+    text-decoration: none;
+}
+
+.skills {
+    list-style-type: square;
+}
+
+.achievements {
+    list-style-type: decimal;
+}
