@@ -1,0 +1,78 @@
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 50px;
+    grid-row-gap: 0px;
+    }
+    .child1-container{
+        float: left;
+        gap: 0;
+        margin: 5px;
+        padding: 5px;
+        width: 300px;
+        max-width: 400px;
+    }
+    .child2-container{
+        float: left;
+        margin: 5px;
+        padding: 5px;
+        width: 300px;
+        max-width: 400px;
+    }
+    .child3-container{
+        margin: 5px;
+        float: right;
+        padding: 5px;
+        width: 300px;
+        max-width: 400px;
+    }
+    .label{
+        width: 250px;
+        border: none;
+       background-color: rgb(203, 238, 248);
+        padding: 5px;
+        margin: 5px;
+        color: black;
+    }
+    input,
+    textarea{
+        width: 250px;
+    }
+
+.error1:focus,
+select:focus{
+    outline: #333 ;
+}
+/*metto colore rosso per elementi che non hanno passato validazione*/
+input:invalid{
+    border-color: red;
+}
+/*compare messaggio di errore se digito pochi caratteri */
+.error1{
+    display: none;
+    color: red;
+}
+.error{
+    color: rgb(51, 49, 49);
+}
+.container1{
+    border: 2px dotted rgb(0, 0, 0);
+}
+
+input[type="text"],
+select,
+textarea{
+    border: 2px solid #333;
+    font-size: 16px;
+    display: block;
+    padding: .5rem .75rem; /*aggiunge spazio tra la riga */
+    border-radius: 10px;
+}
+textarea,
+/*label, */
+input::placeholder{
+    color: rgb(178, 207, 220);
+    background-color: rgb(203, 238, 248);
+}
