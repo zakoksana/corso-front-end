@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/grid-text-input.css">
+</head>
+<body>
+    
+    <div class="parent">
+
+
+        <!--<form action="/forms.html" method="get">
+            <fieldset>
+                <legend>TEST</legend> -->
+        
+                
+        <div class="child1-container">
+            <h3 class="text-input">Text Input</h3>
+            <p>Default</p>
+            <div class="container1">
+            <p>Required</p>
+            
+            <label for="error">
+                Error</label>
+             <input type="text" 
+                class="text-label"
+                required
+                maxlength="25"
+                minlength="10"
+                name="Error" 
+                placeholder="Text"/>
+
+                <p class="error">Error message</p>
+
+                <label for="success">
+                    Success</label>
+                    <input type="text" 
+                    class="text-label"
+                    required
+                    maxlength="25"
+                    minlength="10"
+                    name="Success" 
+                    placeholder="A complex form might have multiple input fileds"/>
+
+                    <p class="Success-message">Success message</p>
+
+                    <label for="active">
+                        Active</label>
+                        <input type="text" 
+                        class="text-label"
+                        required
+                        maxlength="25"
+                        minlength="10"
+                        name="Active" 
+                        placeholder="A complex form might...|"/>
+
+                    <label for="filled">
+                            Filled</label>
+                            <input type="text" 
+                            class="text-label"
+                            required
+                            maxlength="25"
+                            minlength="10"
+                            name="Filled" 
+                            placeholder="Text"/>
+                    <label for="password">
+                            Password</label>
+                            <input type="password" 
+                            class="text-label"
+                            required
+                            maxlength="25"
+                            minlength="10"
+                            name="Password" 
+                            /> <br>
+
+                    <label for="date">
+                            Date</label>
+                            <input type="text" 
+                            class="text-label"
+                            required
+                            name="Date" 
+                            value="2015-12-31"
+                            min="2015-12-31" max="2023-01-01"
+                            placeholder="Text"/>
+
+            </div><!--div .container1 interno-->
+        </div> <!--div .child1-container-->
+
+        <div class="child2-container">
+            <h3 class="text-input">Text Area</h3>
+            <p>Default</p>
+
+        <div class="container1">
+            
+    
+            <textarea  name="Hint text" rows="8" cols="20"  maxlength="255">Hint text</textarea> <br>
+
+            <p class="">Required</p> <br>
+            <textarea  name="Hint text" rows="8" cols="20" >Hint text</textarea> <br>
+
+                <p class="">Error</p> <br>
+                <textarea  name="Hint text" rows="8" cols="20" >Hint text</textarea> <br>
+
+                <p class="">Counter</p> <br>
+                <textarea  name="Hint text" rows="8" cols="20" >Hint text</textarea> <br>
+                
+                <p class="">Counter + Required</p> <br>
+                <textarea  name="Hint text" rows="8" cols="20" >Hint text</textarea> <br>
+                
+                <p class="">Counter + Error</p> <br>
+                <textarea  name="Hint text" rows="8" cols="20" >Hint text</textarea> <br>
+
+                <p class="">Counter + Filled</p> <br>
+                <textarea  name="Hint text" rows="8" cols="20" >Hint text</textarea> <br>
+
+            <p class="">Read</p> <br>
+            <textarea  name="Hint text" rows="8" cols="20" >Hint text</textarea> <br>
+        </div><!--container2-->
+        </div><!--.child2-container-->
+
+<!--3 container-->
+        <div class="child3-container">
+            <h3 class="text-input">Select</h3>
+            <p>Default</p>
+
+        <div class="container1">
+            <label>
+                <select class="label" required name="text">
+                    <option></option>
+                </select>
+            </label>
+
+        <p class="error1">Error</p>
+        <label>
+            <select class="label" required name="text">
+                <option></option>
+            </select>
+        </label>
+            <p>Error message</p>
+
+            <p class="">Required</p>
+            <select class="label" required name="text">
+                <option></option>
+            </select>
+            <p>Error message</p>
+
+            <p class="error1">Error</p>
+            <select class="label" required name="text">
+                <option></option>
+            </select>
+            <p>Error message</p>
+
+            <p class="">Selected</p>
+            <select class="label" required name="selected item">
+                <option>Selected item</option>
+            </select>
+
+            <p class="">Required + Selected</p>
+            <select class="label" required name="text">
+                <option>Selected item</option>
+            </select>
+            
+            
+          <!--div container-->   
+        </div><!--.child3-container-->
+        
+
+
+                
+
+        <!-- </fieldset> fine fieldset-->
+    </div><!-- div .parent-->
+</body>
+</html>

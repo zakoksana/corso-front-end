@@ -1,0 +1,117 @@
+
+
+/* --------*/
+
+.parent .child{
+    color: red;
+}
+.parent > .child{ /* il colore va sotto solo al prima child */
+    color: green;
+}
+.p1 + div{
+    color: #faf;
+}
+.p1 ~ div{ /* ttt elementi sotto p.1*/
+background-color: aqua;
+margin-bottom: 40px;
+}
+/*-------- */
+input,
+select,
+textarea{
+    appearance: none;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+textarea{
+    border: 2px solid #333;
+    font-size: 16px;
+    display: block;
+    padding: .5rem .75rem; /*aggiunge spazio tra la riga */
+    border-radius: 10px;
+}
+textarea{
+    min-height: 10rem;
+    min-width: 40rem;
+}
+select{
+    min-width: 10rem;
+    background-image: url("../immagini/dwn-arrow.png") no-repeat center right .75rem ;
+}
+input[type="radio"],
+input[type="checkbox"]{
+    width: 1.5rem;
+    height: 1.5rem;
+    vertical-align: middle;
+    border: 2px solid #333;
+}
+input[tpe="radio"]{
+    border-radius: 50%;
+    margin-bottom: .5rem;
+}
+input[type="radio"]:checked{
+    background-image: radial-gradient(
+    hsl(213, 74%, 50%)40%, transparent calc(40% + 1px));
+}
+ input[type="checkbox"]:checked{
+    background-image: url("../immagini/checked.svg") no-repeat center/ 75% auto;
+ }
+/*input[type="radio"],
+input[type="checkbox"]
+{
+    accent-color:red ; colora di rosso "radio" 
+    width: 20px;
+    height: 20px;
+}*/
+label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+}
+input::placeholder{
+    color: rgb(170, 183, 255);
+}
+/*play */
+input[type="submit"]{ 
+    cursor: pointer;
+    font-size: 1.2rem;
+    background-color:rgb(170, 183, 255) ;
+    color: #fff;
+    padding: .5rem .75rem;
+    border: 1px solid #333;
+    border-radius: 10px;
+}
+/* quando posiziono mouse su play cambia colore*/
+input[type="submit"]:hover{
+    background-color: rgb(76, 99, 231, 0.599);
+}
+/* per illuminare*/
+input:focus,
+select:focus,
+textarea:focus{
+    outline: #333 dotted;
+}
+/*metto colore rosso per elementi che non hanno passato validazione*/
+input:invalid{
+    border-color: red;
+}
+/*compare messaggio di errore se digito pochi caratteri */
+.error{
+    display: none;
+    color: red;
+}
+.card-number:invalid + .error{
+    display: block;
+}
+/*messaggio di ERRORE */
+
+/* .radio-wrapper{
+    display: flex;
+    align-items: center;
+    line-height: 1.5;
+} */

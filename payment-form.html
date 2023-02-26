@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment form</title>
+    <link rel="stylesheet" href="css/payment-form.css">
+</head>
+<body>
+
+    <h1>Payment form</h1>
+
+    
+
+
+    <form action="/forms.html" method="get">
+    <fieldset>
+        <legend>Payment form</legend>
+
+        <label for="card-number">
+            Card Number</label>
+            <input type="text" 
+            id="card-number"
+            class="card-number"
+            required
+            maxlength="16"
+            minlength="16"
+            name="card-number" 
+            placeholder="Enter card number"/>
+        
+
+        <p class="error">Error message</p>
+        <br>
+
+        <label>
+            Expiration month
+            <select required name="expiration-month">
+                <option></option>
+                <option value="01">01</option>
+                <option value="02">02</option>
+                <option value="03">03</option>
+                <option value="04">04</option>
+                <option value="05">05</option>
+                <option value="06">06</option>
+                <option value="07">07</option>
+                <option value="08">08</option>
+                <option value="09">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select>
+        </label>
+
+        <label>
+            Expiration year
+            <select required name="expiration-year">
+                <option></option>
+                <option value="22">2022</option>
+                <option value="23">2023</option>
+                <option value="24">2024</option>
+                <option value="25">2025</option>
+                <option value="26">2026</option>
+            </select>
+        </label>
+
+        <br>
+
+        <label>
+            Cardholder name
+            <input required name="name" 
+            type="text">
+
+            <br>
+
+            <label>
+                CVV
+                <input minlength="3"
+                maxlength="4"
+                required type="password" name="cvv">
+            </label>
+        </label>
+
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend>Shipping</legend>
+
+        Shipping service: <br>
+        <label class="radio-wrapper">
+            NP
+            <input type="radio" name="shipping" value="NP">
+        </label>
+
+        <label>
+            Meest express
+            <input type="radio" name="shipping" value="meest">
+        </label>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend>User info</legend>
+
+        <label for="payment-email">Send receipt to the e-mail:</label>
+        <input id="payment-email" type="email" name="email" placeholder="Enter an email">
+
+        <br>
+
+        <label for="payment-comment">Comment for the order</label>
+
+        <textarea id="paymnet-comment" name="payment-comment">
+
+        </textarea>
+    </fieldset>
+
+    <br>
+
+    <label>
+        <input type="checkbox" name="do-not-call" checked>
+        Do not call me back
+    </label>
+
+    <br>
+    <a href="http://test.com/terms-of-service">Terms of service</a>
+
+    <br>
+    <br>
+
+    <input type="submit" value="Pay">
+
+    </form>
+
+
+    <!--prove div -->
+    <div>
+        <p class="child">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit provident necessitatibus nulla incidunt dolorum id fuga illo tempora, ad dolore at iusto quos a aliquam! Officia incidunt sint impedit modi.</p>
+    </div>
+
+    <div class="parent">
+        <div>
+            <p class="child">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores perspiciatis explicabo sint numquam, architecto veritatis porro alias repellat odit repellendus aspernatur? Cupiditate alias a nobis, dolore voluptatem laboriosam aliquid amet!</p>
+        </div>
+    </div>
+
+    <div>
+        <p class="p1">Lorem ipsum</p>
+
+        <div>Lorem test</div>
+        <span>test 3</span>
+
+        <div>Lorem</div>
+    </div>
+</body>
+</html>
