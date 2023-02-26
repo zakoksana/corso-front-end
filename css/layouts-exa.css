@@ -1,0 +1,44 @@
+
+
+
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 200px 450px;
+    grid-template-rows: minmax(50px, auto); /*non può allargarsi più di 50px */
+    /* grid-template-areas: 
+    "header header " 
+    "sidebar content"
+    "sidebar content"; versione 1 OPPURE*/
+    grid-column-gap: 20px;
+    /* grid-row-gap: 20px; */
+    gap:20px 40px;
+    justify-content: center;
+    height: 100vh; /*con questo diventa alto e occupa ttt pagina */
+    align-content: center; /* si allinea al centro e diventa piccolo*/
+}
+
+
+.grid-item-1{
+   /* grid-area: header; versione 1 OPPURE*/
+   grid-column-start: 1; /* versione 2*/
+   grid-column-end: -1; /* vers.2 - non menziono 2 riga ma subito 3^ riga.Se volgio solo una colonna, allora -1 */
+}
+.grid-item-2{
+    /* grid-area: sidebar; versione 1 OPPURE*/
+    grid-row-start: 2; /*vers.2: unito 2 righe */
+    grid-row-end: 4;
+    text-align: center;
+    padding-top: 20px;
+}
+.grid-item-3{
+    /* grid-area: content; versione 1 OPPURE*/
+    grid-row: 2 / 4; /* identico alla vers 2 grid-row-start*/
+
+}
+.grid-item-4{
+    grid-column: span 2;  /* quante colonne unire */
+}
+.grid-item{
+    border: 1px solid #000;
+}

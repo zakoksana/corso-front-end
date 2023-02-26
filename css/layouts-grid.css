@@ -1,0 +1,39 @@
+
+.grid-container{
+    display: grid;
+    grid-template-columns:324px 324px 648px ;
+    grid-template-rows: minmax (360px auto) minmax(155px, auto);
+    gap:20px 50px;
+}
+.grid-item-1{
+    grid-column: span 2;
+}
+.action-buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.main-photo{
+    width: 100%;
+}
+.bordered-photo{
+    display: block;
+    border: 1px solid #ACACAC;
+    border-radius: 20px;
+}
+/* button*/
+.button{
+    display:block ;
+    padding: 19px 45px;
+    border-radius: 32px;
+    background-color: transparent;
+    font-size: 22px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.button.primary{
+    background-color: #EDA415;
+    color: #fff;
+    border: none;
+}
