@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <style>
+        .div1{
+           background-color: aqua; 
+           width:80% ;
+           height: 100px;
+           float: left;
+        }
+        .div2{
+            background-color:blueviolet;
+            /* width: 80%;
+            display: inline; */
+            height: 100px;
+        }
+        .s1{
+            background-color: aquamarine;
+            display: none;
+        }
+        .s2{
+            background-color: blue;
+        }
+        .s3{
+            background-color:blueviolet;
+            display: block;
+        }
+        .cat-image{
+            width: 200px;
+            float: right;
+        }
+        .paragraph{
+            clear: both;
+        }
+        .wrapper{
+            display: flex;
+            background: #afaf;
+            /* gap: 100px; oppure *//* left e center avranno distanza tra di loro*/
+            justify-content: space-around; /* oppure q-to*/
+            flex-direction: row-reverse;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">Lorem</div>
+    <span class="s1">lorem</span>
+    <div class="div2">Test- div2</div>
+
+    
+    <psan class="s2">lorem</psan>
+    <span class="s3">lorem-block</span>
+
+    <p class="paragraph">
+        <img src="immagini/cat-sitting.png" alt="a cat is sitting on the floor" class="cat-image">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil atque at, porro laudantium doloribus quasi nesciunt officia animi, facere optio repellendus exercitationem provident recusandae laboriosam ipsa libero delectus distinctio consequuntur!</p>
+
+        <p class="paragraph2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus laudantium odio dolorem, et dolores dolore provident molestiae minima alias. Id culpa itaque laudantium soluta, libero quaerat sequi! Dolorum, commodi quibusdam!</p>
+
+        <hr>
+        <div class="wrapper">
+            <div class="left">left</div>
+            <div class="center">center</div>
+            <div class="right">right</div>
+        </div>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+body{
+background-color: rgb(215, 243, 243);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper{
+    margin-top: 200px;
+    width: 100vw ;
+    height:vh ;
+   /* background-color: rgb(215, 243, 243); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.widget{
+    width: 540px;
+    background-image: url(../image/clouds-sky.gif);
+    background-repeat:no-repeat;
+    background-size: cover; /* con cover posso coprire lo sfondo blu */
+    border-radius: 20px;
+    /* padding: 15px;*/
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px 2px #333;
+}
+
+.block-padding{
+    padding: 30px 0;
+}
+.weather-info{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.city-name {
+    font-size: 40px;
+}
+.weather-condition{
+    font-size: 14px;
+}
+.temperature {
+    font-size: 60px;
+}
+
+.condition-details {
+    font-size: 18px;
+}
+
+
+
+/* grid for days weather*/
+.days-weather{
+    border-top: 1px  #fff solid; /* abbiamo creato liena di sopra e sotto*/
+    border-bottom: 1px #fff solid;
+    padding: 30px 20px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 40px;
+}
+.days-weather > div{ /*ora dobbiamo allineare il testo al centro */
+    text-align: center; /*  ogni div al centro*/
+}
+
+
+.next-day{
+    margin: 10px auto;
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}

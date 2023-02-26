@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid template (columns-rows)</title>
+<style>
+    .wrapper-flex{
+            display: flex;
+            background: #afaf;
+            /* gap: 100px; oppure *//* left e center avranno distanza tra di loro*/
+            justify-content: space-between; /* oppure q-to*/
+            
+        }
+    .wrapper-grid{
+        border: 1px solid black;
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr;
+        gap: 3px 5px
+
+    }
+    .wrapper-grid >div {
+    border: 1px solid black;
+    }
+</style>
+
+</head>
+<body>
+   
+    <div class="wrapper-flex">
+        <div class="left">left</div>
+        <div class="center">center</div>
+        <div class="right">right</div>
+    </div>
+    <div class="wrapper-grid">
+        <div class="left">left</div>
+        <div class="center">center</div>
+        <div class="right">right</div>
+    </div>
+
+    CSS Grid Generator
+</body>
+</html>
